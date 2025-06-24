@@ -50,10 +50,10 @@ export default function Banner() {
               className="w-full h-full bg-cover bg-center flex flex-col justify-center items-start px-6 md:px-16"
               style={{ backgroundImage: `url(${banner.image})` }}
             >
-              <h2 className="text-white text-lg md:text-4xl font-bold drop-shadow-lg">
+              <h2 className="text-cyan-500 text-lg md:text-4xl font-bold drop-shadow-lg">
                 {banner.title}
               </h2>
-              <p className="text-white text-lg mt-2 drop-shadow-md">
+              <p className="text-white font-semibold text-lg mt-2 drop-shadow-md">
                 {banner.description}
               </p>
             </div>
