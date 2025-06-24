@@ -63,7 +63,7 @@ export default function Banner() {
 
       <style jsx global>{`
         .swiper-pagination-bullet {
-          background-color: #d1d5db; /* cinza claro (inativas) */
+          background-color: #d1d5db;
           opacity: 1;
           width: 5px;
           height: 5px;
@@ -71,7 +71,7 @@ export default function Banner() {
         }
 
         .swiper-pagination-bullet-active {
-          background-color: #00c4cc; /* azul ClinSP */
+          background-color: #00c4cc;
           transform: scale(1.2);
         }
       `}</style>
