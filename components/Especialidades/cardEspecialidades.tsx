@@ -9,16 +9,16 @@ interface CardProps {
 
 const CardEspecialidades = ({ image, title, text, especial }: CardProps) => {
   return (
-    <div className="border-2 border-solid border-cyan-600 rounded-4xl flex flex-col justify-center w-[400px] overflow-hidden group relative pb-[32px]">
+    <div className="border-2 border-solid border-cyan-600 rounded-2xl flex flex-col justify-center w-[400px] overflow-hidden group relative pb-[32px]">
       <div>
         <Image
-          className="rounded-t-4xl h-[400px] w-[400px] object-cover "
+          className="h-[400px] w-[400px] object-cover "
           src={!!image ? image : "/logo_clinsp.png"}
           alt="Especialidades"
           width={400}
           height={400}
         />
-        <h2 className="text-[20px] text-cyan-50 w-full text-center font-bold absolute bottom-2 z-10 ">
+        <h2 className="text-lg text-cyan-50 w-full text-center font-bold absolute bottom-2 z-10 ">
           {title}
         </h2>
       </div>
