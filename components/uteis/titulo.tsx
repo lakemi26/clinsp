@@ -6,7 +6,7 @@ interface TituloProps {
 
 const Titulo = ({ titulo }: TituloProps) => {
   return (
-    <div className="flex gap-2 items-center ml-10 my-15">
+    <div className="flex gap-2 items-center ml-8 md:ml-18 lg:ml-20 xl:ml-35 mt-30 mb-15">
       <div className="w-[30px]">
         <Image alt="Cinsp" src="/patas.png" width={500} height={500} />
       </div>
