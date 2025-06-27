@@ -1,3 +1,4 @@
+import Adocao from "@/components/adocao/adocao";
 import Banner from "@/components/Banner/banner";
 import Equipe from "@/components/Equipe/equipe";
 import Especialidades from "@/components/Especialidades/especialidades";
@@ -13,6 +14,7 @@ export default function Home() {
       <Servicos />
       <Sobre />
       <Equipe />
+      <Adocao />
       <Footer />
     </div>
   );
