@@ -12,6 +12,7 @@ export default function Home() {
       <Servicos />
       <Sobre />
       <Equipe />
+      <br />
     </div>
   );
 }
