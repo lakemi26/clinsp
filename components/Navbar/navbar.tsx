@@ -70,10 +70,6 @@ const Navbar = () => {
               Adoção
               <span className="absolute left-0 bottom-0 w-full h-0.5 bg-gradient-to-r from-cyan-600 to-cyan-300 transform scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
             </Link>
-            <Link href="" className="group relative">
-              Contato
-              <span className="absolute left-0 bottom-0 w-full h-0.5 bg-gradient-to-r from-cyan-600 to-cyan-300 transform scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
-            </Link>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import Banner from "@/components/Banner/banner";
 import Equipe from "@/components/Equipe/equipe";
 import Especialidades from "@/components/Especialidades/especialidades";
+import Footer from "@/components/Footer/footer";
 import Servicos from "@/components/Servicos/servicos";
 import Sobre from "@/components/Sobre/sobre";
 
@@ -12,7 +13,7 @@ export default function Home() {
       <Servicos />
       <Sobre />
       <Equipe />
-      <br />
+      <Footer />
     </div>
   );
 }
