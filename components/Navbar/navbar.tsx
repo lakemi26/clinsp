@@ -50,19 +50,19 @@ const Navbar = () => {
 
         <div className="m-auto flex items-center justify-between">
           <div className="flex items-center justify-center gap-8 text-xl font-medium">
-            <Link href="" className="group relative">
+            <Link href="#especialidades" className="group relative">
               Especialidades
               <span className="absolute left-0 bottom-0 w-full h-0.5 bg-gradient-to-r from-cyan-600 to-cyan-300 transform scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
             </Link>
-            <Link href="" className="group relative">
+            <Link href="#servicos" className="group relative">
               Serviços
               <span className="absolute left-0 bottom-0 w-full h-0.5 bg-gradient-to-r from-cyan-600 to-cyan-300 transform scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
             </Link>
-            <Link href="" className="group relative">
+            <Link href="#sobre" className="group relative">
               Sobre
               <span className="absolute left-0 bottom-0 w-full h-0.5 bg-gradient-to-r from-cyan-600 to-cyan-300 transform scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
             </Link>
-            <Link href="" className="group relative">
+            <Link href="#equipe" className="group relative">
               Equipe
               <span className="absolute left-0 bottom-0 w-full h-0.5 bg-gradient-to-r from-cyan-600 to-cyan-300 transform scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
             </Link>

@@ -4,7 +4,7 @@ import CardSobre from "./cardSobre";
 
 const Sobre = () => {
   return (
-    <div>
+    <div id="sobre">
       <Titulo titulo="Sobre Nós" />
       <div className="bg-gradient-to-b from-cyan-100 via-cyan-50 to-cyan-100 flex p-5 gap-10 justify-center w-[85%] m-auto rounded-2xl">
         <div className="w-[400px]  rounded-2xl overflow-hidden hidden lg:block">

@@ -3,7 +3,7 @@ import Titulo from "../uteis/titulo";
 
 const Servicos = () => {
   return (
-    <div className="">
+    <div id="servicos">
       <Titulo titulo="Nossos Serviços" />
       <div className="flex flex-col lg:flex-row justify-center items-center gap-15 lg:gap-30 ">
         <div className="w-[400px] h-[410px] md:w-[500px] md:h-[380px] border-2 border-solid border-cyan-500 rounded-2xl p-5 pb-0 relative bg-gradient-to-b from-white to-cyan-50">

@@ -3,7 +3,7 @@ import CardEquipe from "./cardEquipe";
 
 const Equipe = () => {
   return (
-    <div className="">
+    <div id="equipe">
       <Titulo titulo="Nossa Equipe" />
       <div className="flex justify-center flex-wrap gap-5">
         <CardEquipe

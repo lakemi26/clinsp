@@ -3,7 +3,7 @@ import CardEspecialidades from "./cardEspecialidades";
 
 const Especialidades = () => {
   return (
-    <div className="">
+    <div id="especialidades">
       <Titulo titulo="Nossas Especialidades" />
       <div className="flex justify-center gap-10 flex-col items-center lg:flex-row">
         <CardEspecialidades
