@@ -18,11 +18,11 @@ const Menu = () => {
       />
       {isOpen && (
         <div className="absolute bg-white text-cyan-600 left-0 top-20 w-full h-[calc(100vh-80px)] flex flex-col items-center justify-center gap-8 text-xl z-10">
-          <Link href="">Especialidades</Link>
-          <Link href="">Serviços</Link>
-          <Link href="">Sobre</Link>
-          <Link href="">Equipe</Link>
-          <Link href="">Adoção</Link>
+          <Link href="#especialidades">Especialidades</Link>
+          <Link href="#servicos">Serviços</Link>
+          <Link href="#sobre">Sobre</Link>
+          <Link href="#equipe">Equipe</Link>
+          <Link href="#adocao">Adoção</Link>
         </div>
       )}
     </div>
