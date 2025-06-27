@@ -8,7 +8,7 @@ const Menu = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <div>
+    <div className="">
       <Hamburger
         toggled={isOpen}
         toggle={setOpen}
@@ -17,7 +17,7 @@ const Menu = () => {
         duration={0.8}
       />
       {isOpen && (
-        <div className="absolute text-cyan-600 left-0 top-20 w-full h-[calc(100vh-80px)] flex flex-col items-center justify-center gap-8 text-xl z-10">
+        <div className="absolute bg-white text-cyan-600 left-0 top-20 w-full h-[calc(100vh-80px)] flex flex-col items-center justify-center gap-8 text-xl z-10">
           <Link href="">Especialidades</Link>
           <Link href="">Serviços</Link>
           <Link href="">Sobre</Link>

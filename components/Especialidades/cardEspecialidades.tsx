@@ -9,7 +9,7 @@ interface CardProps {
 
 const CardEspecialidades = ({ image, title, text, especial }: CardProps) => {
   return (
-    <div className="border-2 border-solid border-cyan-600 rounded-2xl flex flex-col justify-center w-[400px] overflow-hidden group relative pb-[32px]">
+    <div className="border-2 border-solid border-cyan-600 rounded-2xl flex flex-col justify-center w-[340px] md:w-[400px] overflow-hidden group relative pb-[32px]">
       <div>
         <Image
           className="h-[400px] w-[400px] object-cover "

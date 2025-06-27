@@ -6,7 +6,7 @@ const Servicos = () => {
     <div id="servicos">
       <Titulo titulo="Nossos Serviços" />
       <div className="flex flex-col lg:flex-row justify-center items-center gap-15 lg:gap-30 ">
-        <div className="w-[400px] h-[410px] md:w-[500px] md:h-[380px] border-2 border-solid border-cyan-500 rounded-2xl p-5 pb-0 relative bg-gradient-to-b from-white to-cyan-50">
+        <div className=" w-[340px] md:w-[500px] md:h-[380px] border-2 border-solid border-cyan-500 rounded-2xl p-5 pb-0 relative bg-gradient-to-b from-white to-cyan-50">
           <div className="flex gap-2 items-center ">
             <div className="w-[40px]">
               <Image
@@ -35,10 +35,16 @@ const Servicos = () => {
             Aqui, cada consulta é feita com amor, escuta e dedicação.
           </p>
           <div className=" m-auto absolute bottom-0 w-full flex justify-center left-0">
-            <Image alt="Olhos" src="/cabecinhas.png" width={400} height={500} />
+            <Image
+              alt=""
+              src="/cabecinhas.png"
+              width={400}
+              height={500}
+              className="hidden md:block"
+            />
           </div>
         </div>
-        <div className="w-[400px] h-[410px] md:w-[500px] md:h-[380px] border-2 border-solid border-cyan-500 rounded-2xl p-5 bg-gradient-to-b from-white to-cyan-50 relative">
+        <div className="w-[340px] min-h-[410px] md:w-[500px] md:h-[380px] border-2 border-solid border-cyan-500 rounded-2xl p-5 bg-gradient-to-b from-white to-cyan-50 relative">
           <div className="flex gap-2 items-center">
             <div className="w-[40px]">
               <Image alt="Serviços" src="/teste.png" width={500} height={500} />
@@ -65,7 +71,13 @@ const Servicos = () => {
             <li>Ecocardiograma</li>
           </ul>
           <div className="absolute bottom-0 left-[300px]">
-            <Image alt="Olhos" src="/olhos.png" width={150} height={500} />
+            <Image
+              alt="Olhos"
+              src="/olhos.png"
+              width={150}
+              height={500}
+              className="hidden md:block"
+            />
           </div>
         </div>
       </div>

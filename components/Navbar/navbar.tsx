@@ -5,7 +5,7 @@ import Menu from "./menu";
 const Navbar = () => {
   return (
     <div className="h-20 px-4 md:px-8 lg:px-16 relative text-cyan-600 ">
-      <div className="h-full flex items-center justify-between mt-2 lg:hidden">
+      <div className="h-full flex items-center justify-between mt-2 lg:hidden ">
         {/*Mobile */}
         <Link href={"/"}>
           <div className="flex">

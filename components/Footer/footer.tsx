@@ -4,7 +4,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div>
-      <div className="mt-30 bg-cyan-700 flex flex-col gap-5 md:flex-row justify-around items-center p-10">
+      <div className="mt-30 bg-cyan-700 flex flex-col gap-5 md:flex-row justify-around md:items-center p-10">
         <div>
           <Image alt="" src="/logo_clinsp.png" width={200} height={200}></Image>
         </div>
@@ -35,13 +35,15 @@ const Footer = () => {
             <Image alt="" src="/relogio.png" width={25} height={25}></Image>
             <p className="text-cyan-50 font-extrabold">Horários:</p>
           </div>
-          <p className="text-cyan-50 font-semibold ml-[25px]">
+          <p className="text-cyan-50 font-semibold md:ml-[25px] ">
             Seg à Sex - 9h às 17h30
           </p>
-          <p className="text-cyan-50 font-semibold ml-[25px]">
+          <p className="text-cyan-50 font-semibold md:ml-[25px]">
             Sab - 9h às 12h30
           </p>
-          <p className="text-cyan-50 font-semibold ml-[25px]">Dom - Fechado</p>
+          <p className="text-cyan-50 font-semibold md:ml-[25px]">
+            Dom - Fechado
+          </p>
         </div>
       </div>
       <div className="bg-cyan-800">

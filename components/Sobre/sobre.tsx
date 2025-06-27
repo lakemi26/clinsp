@@ -30,7 +30,7 @@ const Sobre = () => {
             . E para oferecer um atendimento mais completo, contamos com
             parcerias em diversas especialidades, como:
           </p>
-          <div className="flex gap-5 md:flex-row md:gap-10 flex-wrap m-auto">
+          <div className="flex gap-5 md:flex-row md:gap-10 flex-wrap m-auto justify-center">
             <CardSobre image="/acupuntura.png" title="Acupuntura" />
             <CardSobre image="/dermatologia.png" title="Dermatologia" />
             <CardSobre image="/oftalmologia.png" title="Oftalmologia" />
