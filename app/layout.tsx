@@ -11,7 +11,8 @@ const ralewaySans = Raleway({
 
 export const metadata: Metadata = {
   title: "ClinSP | Clínica Veterinária",
-  description: "Cuidado completo para cães e gatos na Zona Sul de SP.",
+  description:
+    "A ClinSP é especializada em cuidados veterinários com atendimento humanizado, prevenção e adoção de pets. Agende sua consulta!",
 };
 
 export default function RootLayout({
