@@ -23,6 +23,16 @@ const Menu = () => {
           <Link href="#sobre">Sobre</Link>
           {/* <Link href="#equipe">Equipe</Link> */}
           <Link href="#adocao">Adoção</Link>
+          <div>
+            <Link
+              href="https://wa.me/5511991495258"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 bg-cyan-600 text-white font-semibold rounded-md "
+            >
+              Agende sua consulta
+            </Link>
+          </div>
         </div>
       )}
     </div>

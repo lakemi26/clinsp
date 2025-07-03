@@ -72,6 +72,24 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
+
+        <div className="absolute right-20">
+          <Link
+            href="https://wa.me/5511991495258"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 bg-cyan-600 text-white font-semibold rounded-md align-end flex gap-2 "
+          >
+            <Image
+              src="/whatsapp.png"
+              alt="contato"
+              width={20}
+              height={20}
+              className="min-w-[24px] "
+            />
+            Agende sua consulta
+          </Link>
+        </div>
       </div>
     </div>
   );
