@@ -23,6 +23,7 @@ const Menu = () => {
           <Link href="#sobre">Sobre</Link>
           {/* <Link href="#equipe">Equipe</Link> */}
           <Link href="#adocao">Adoção</Link>
+          <Link href="#ambientes">Ambientes</Link>
           <div>
             <Link
               href="https://wa.me/5511991495258"

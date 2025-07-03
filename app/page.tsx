@@ -1,4 +1,5 @@
 import Adocao from "@/components/adocao/adocao";
+import Ambientes from "@/components/ambientes/ambientes";
 import Banner from "@/components/Banner/banner";
 import Especialidades from "@/components/Especialidades/especialidades";
 import Footer from "@/components/Footer/footer";
@@ -14,6 +15,7 @@ export default function Home() {
       <Sobre />
       {/* <Equipe /> */}
       <Adocao />
+      <Ambientes />
       <Footer />
     </div>
   );
