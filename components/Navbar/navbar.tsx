@@ -62,10 +62,10 @@ const Navbar = () => {
               Sobre
               <span className="absolute left-0 bottom-0 w-full h-0.5 bg-gradient-to-r from-cyan-600 to-cyan-300 transform scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
             </Link>
-            <Link href="#equipe" className="group relative">
+            {/* <Link href="#equipe" className="group relative">
               Equipe
               <span className="absolute left-0 bottom-0 w-full h-0.5 bg-gradient-to-r from-cyan-600 to-cyan-300 transform scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>
-            </Link>
+            </Link> */}
             <Link href="#adocao" className="group relative">
               Adoção
               <span className="absolute left-0 bottom-0 w-full h-0.5 bg-gradient-to-r from-cyan-600 to-cyan-300 transform scale-x-0 origin-left transition-transform duration-300 ease-in-out group-hover:scale-x-100"></span>

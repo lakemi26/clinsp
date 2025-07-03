@@ -13,7 +13,7 @@ export default function Home() {
       <Especialidades />
       <Servicos />
       <Sobre />
-      <Equipe />
+      {/* <Equipe /> */}
       <Adocao />
       <Footer />
     </div>

@@ -21,7 +21,7 @@ const Menu = () => {
           <Link href="#especialidades">Especialidades</Link>
           <Link href="#servicos">Serviços</Link>
           <Link href="#sobre">Sobre</Link>
-          <Link href="#equipe">Equipe</Link>
+          {/* <Link href="#equipe">Equipe</Link> */}
           <Link href="#adocao">Adoção</Link>
         </div>
       )}
