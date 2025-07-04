@@ -19,7 +19,7 @@ O site oficial da ClinSP, uma clínica veterinária localizada em São Paulo com
   <br/>
   <br/>
 
-  🛠️ Tecnologias Utilizadas
+# 🛠️ Tecnologias Utilizadas
 
 - Next.js
 - TypeScript
