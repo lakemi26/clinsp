@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🐶 ClinSP - Clinica Veterinária e Adoção de Pets
 
-## Getting Started
+[👉 Acesse o site oficial da ClinSP](https://www.clinspvet.com)
 
-First, run the development server:
+O site oficial da ClinSP, uma clínica veterinária localizada em São Paulo com atendimento carinhoso e especializado para pets. Além dos serviços veterinários, a ClinSP também promove a _adoção responsável_, conectando animais resgatados a famílias amorosas.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# ✨ Funcionalidades
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Apresentação dos serviços oferecidos pela clínica
+- Listagem dinâmica de pets disponíveis para adoção
+- Integração com o WhatsApp para contato rápido
+- Otimização para mecanismos de busca (SEO), para que mais pessoas encontrem a clínica no Google
+- Design responsivo e acolhedor, pensado com carinho para os tutores e seus pets
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🛠️ Tecnologias Utilizadas
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Next.js
+- TypeScript
+- Tailwind CSS
+- Firebase
 
-## Learn More
+# 🐕 Sobre o Projeto
 
-To learn more about Next.js, take a look at the following resources:
+Este projeto foi desenvolvido com o objetivo de modernizar a presença digital da ClinSP, tornando mais fácil para tutores encontrarem a clínica, conhecerem seus serviços e se conectarem com pets que precisam de um lar.
+<br/>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+É mais do que um site: é uma ponte entre o cuidado e o amor. 🐾💙
