@@ -1,9 +1,12 @@
 # 🐶 ClinSP - Clinica Veterinária e Adoção de Pets
 
-[👉 Acesse o site oficial da ClinSP](https://www.clinspvet.com)
+<br/>
+
+👉[Acesse o site oficial da ClinSP](https://www.clinspvet.com)
 
 O site oficial da ClinSP, uma clínica veterinária localizada em São Paulo com atendimento carinhoso e especializado para pets. Além dos serviços veterinários, a ClinSP também promove a _adoção responsável_, conectando animais resgatados a famílias amorosas.
 
+<br/>
 # ✨ Funcionalidades
 
 - Apresentação dos serviços oferecidos pela clínica
@@ -11,13 +14,14 @@ O site oficial da ClinSP, uma clínica veterinária localizada em São Paulo com
 - Integração com o WhatsApp para contato rápido
 - Otimização para mecanismos de busca (SEO), para que mais pessoas encontrem a clínica no Google
 - Design responsivo e acolhedor, pensado com carinho para os tutores e seus pets
-
-🛠️ Tecnologias Utilizadas
+  <br/>
+  🛠️ Tecnologias Utilizadas
 
 - Next.js
 - TypeScript
 - Tailwind CSS
 - Firebase
+  <br/>
 
 # 🐕 Sobre o Projeto
 
