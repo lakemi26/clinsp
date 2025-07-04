@@ -8,6 +8,7 @@
 O site oficial da ClinSP, uma clínica veterinária localizada em São Paulo com atendimento carinhoso e especializado para pets. Além dos serviços veterinários, a ClinSP também promove a _adoção responsável_, conectando animais resgatados a famílias amorosas.
 
 <br/>
+
 # ✨ Funcionalidades
 
 - Apresentação dos serviços oferecidos pela clínica
