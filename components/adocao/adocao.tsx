@@ -1,34 +1,36 @@
-import Titulo from "../uteis/titulo";
-import CardAdocao from "./cardAdocao";
+import CardAdocao from "@/components/adocao/cardAdocao";
+import Titulo from "@/components/uteis/titulo";
 
-const Adocao = () => {
-  return (
-    <div id="adocao">
-      <Titulo titulo="Adoção" />
-      <div className="flex justify-center flex-wrap gap-5">
-        <CardAdocao
-          image="/adocao1.jpg"
-          nome="Romeu"
-          texto="Sou o Romeu: carinhoso, calmo e feito pra amar. Quer ser meu final feliz?"
-        />
-        <CardAdocao
-          image="/adocao2.jpg"
-          nome="Mia"
-          texto="Oi, sou a Mia! Pequenina, fofa e pronta pra te encher de ronrons."
-        />
-        <CardAdocao
-          image="/adocao3.jpg"
-          nome="Tom"
-          texto="Me chama de Tom! Brinco, corro e dou as melhores sonecas no colo."
-        />
-        <CardAdocao
-          image="/adocao4.jpg"
-          nome="Lola"
-          texto="Sou a Lola, uma gatinha doce que só quer um lar cheio de amor 💕"
-        />
-      </div>
-    </div>
-  );
+type Pet = {
+  id: string;
+  nome: string;
+  descricao: string;
+  imageUrl?: string;
 };
 
-export default Adocao;
+export default function Adocao({ pets }: { pets: Pet[] }) {
+  const vazio = !pets || pets.length === 0;
+
+  return (
+    <div id="adocao" className="px-4">
+      <Titulo titulo="Adoção" />
+      {vazio ? (
+        <p className="text-center text-[20px] font-semibold text-cyan-800 mt-4">
+          Estoque de fofura zerado… por enquanto! 😉 Fique de olho, sempre temos
+          novos pets cheios de amor para dar.
+        </p>
+      ) : (
+        <div className="flex justify-center flex-wrap gap-5">
+          {pets.map((p) => (
+            <CardAdocao
+              key={p.id}
+              image={p.imageUrl || "/logo_clinsp_img.png"}
+              nome={p.nome}
+              texto={p.descricao}
+            />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}

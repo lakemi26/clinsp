@@ -1,40 +1,28 @@
+import { adminDb } from "@/app/firebase/admin";
 import Adicionarpet from "@/components/adocao/adicionarpet";
-import Editar from "@/components/adocao/editarAdocao";
-import React from "react";
+import Editar from "@/components/adocao/editarPet";
 
-const Cadastro = () => {
+export default async function Cadastro() {
+  const snap = await adminDb
+    .collection("pets")
+    .orderBy("createdAt", "desc")
+    .get();
+  const pets = snap.docs.map((d) => ({ id: d.id, ...d.data() })) as any[];
+
   return (
     <div className="space-y-7 mt-7 p-5">
       <Adicionarpet />
-      <div className="flex gap-5 justify-center">
-        <Editar
-          image="/adocao1.jpg"
-          nome="Romeu"
-          texto="Sou o Romeu: carinhoso, calmo e feito pra amar. Quer ser meu final feliz?"
-        />
-        <Editar
-          image="/adocao1.jpg"
-          nome="Romeu"
-          texto="Sou o Romeu: carinhoso, calmo e feito pra amar. Quer ser meu final feliz?"
-        />
-        <Editar
-          image="/adocao1.jpg"
-          nome="Romeu"
-          texto="Sou o Romeu: carinhoso, calmo e feito pra amar. Quer ser meu final feliz?"
-        />
-        <Editar
-          image="/adocao1.jpg"
-          nome="Romeu"
-          texto="Sou o Romeu: carinhoso, calmo e feito pra amar. Quer ser meu final feliz?"
-        />
-        <Editar
-          image="/adocao1.jpg"
-          nome="Romeu"
-          texto="Sou o Romeu: carinhoso, calmo e feito pra amar. Quer ser meu final feliz?"
-        />
+      <div className="flex flex-wrap gap-5 justify-center">
+        {pets.map((p) => (
+          <Editar
+            key={p.id}
+            id={p.id}
+            imageUrl={p.imageUrl}
+            nome={p.nome}
+            descricao={p.descricao}
+          />
+        ))}
       </div>
     </div>
   );
-};
-
-export default Cadastro;
+}
