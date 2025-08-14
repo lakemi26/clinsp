@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "cloudinary": "^2.7.0",
+    "firebase": "^12.1.0",
+    "firebase-admin": "^13.4.0",
     "hamburger-react": "^2.5.2",
     "next": "15.3.4",
     "react": "^19.0.0",

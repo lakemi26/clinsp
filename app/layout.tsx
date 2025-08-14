@@ -10,9 +10,9 @@ const ralewaySans = Raleway({
 });
 
 export const metadata: Metadata = {
-  title: "ClinSP | Clínica Veterinária",
+  title: "ClinSP | Clínica Veterinária no Bairro Saúde (SP)",
   description:
-    "A ClinSP é especializada em cuidados veterinários com atendimento humanizado, prevenção e adoção de pets. Agende sua consulta!",
+    "ClinSP - clínica veterinária no bairro Saúde (SP), especializada em cuidados preventivos, atendimento humanizado e programas de adoção para cães e gatos. Cuide do seu pet com quem entende!",
 };
 
 export default function RootLayout({
