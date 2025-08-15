@@ -11,10 +11,16 @@ const CardAdocao = ({ image, nome, texto }: AdocaoProps) => {
     <div className="flex flex-col gap-2 border-2 border-dashed rounded-xl border-cyan-600 hover:border-solid justify-center items-center w-[300px] h-[350px] p-2">
       <div className="w-[280px] h-[180px] overflow-hidden rounded-2xl">
         <Image
-          src={!!image ? image : "/logo_clinsp_img.png"}
+          src={image || "/logo_clinsp_img.png"}
           alt="Pet para adoção na saúde"
           width={300}
           height={200}
+          style={{
+            objectFit: "cover",
+            objectPosition: "center",
+            width: "100%",
+            height: "100%",
+          }}
         />
       </div>
       <h2 className="text-cyan-700 font-bold text-2xl">{nome}</h2>
