@@ -54,7 +54,7 @@ const Modal = ({ children, titulo, ref }: ModalProps) => {
   }, []);
 
   return (
-    <dialog ref={dialogRef} className="m-auto p-5">
+    <dialog ref={dialogRef} className="m-auto p-5 rounded-xl">
       <h2 className="text-cyan-700 font-bold text-3xl">{titulo}</h2>
       {children}
     </dialog>

@@ -10,7 +10,7 @@ function SubmitBtn({ label }: { label: string }) {
   const { pending } = useFormStatus();
   return (
     <button
-      className="py-1 px-2 bg-cyan-600 rounded-sm text-white font-semibold w-[10vw] m-auto disabled:opacity-60"
+      className="py-1 px-2 bg-cyan-600 rounded-sm text-white font-semibold w-[20vw] lg:w-[8vw] m-auto disabled:opacity-60"
       type="submit"
       disabled={pending}
     >
@@ -46,9 +46,8 @@ export default function Editar({ id, imageUrl, nome, descricao }: EditarProps) {
         {descricao}
       </p>
 
-      {/* EDITAR */}
       <Modal ref={editModalRef} titulo="Editar pet">
-        <div className="w-[75vw] md:w-[50vw]">
+        <div className="w-[75vw] md:w-[50vw] lg:w-[30vw]">
           <form
             action={async (fd) => {
               try {
@@ -65,6 +64,20 @@ export default function Editar({ id, imageUrl, nome, descricao }: EditarProps) {
             <input type="hidden" name="petId" value={id} />
 
             <label className="text-cyan-700">Nova imagem (opcional):</label>
+
+            {preview && (
+              <div className="flex justify-center mt-2">
+                <Image
+                  src={preview}
+                  alt="Preview"
+                  className="w-32 h-32 object-cover rounded-md border-2 border-cyan-700"
+                  width={300}
+                  height={300}
+                  unoptimized
+                />
+              </div>
+            )}
+
             <input
               type="file"
               name="imagem"
@@ -100,7 +113,7 @@ export default function Editar({ id, imageUrl, nome, descricao }: EditarProps) {
 
       {/* EXCLUIR */}
       <Modal ref={deleteModalRef} titulo="Tem certeza?">
-        <div className="w-[75vw] md:w-[50vw]">
+        <div className="w-[75vw] md:w-[50vw] lg:w-[20vw]">
           <form
             action={async (fd) => {
               try {
@@ -110,15 +123,16 @@ export default function Editar({ id, imageUrl, nome, descricao }: EditarProps) {
                 alert("Não foi possível excluir.");
               }
             }}
-            className="flex flex-col gap-3 mt-5"
+            className="flex flex-col gap-5 mt-5"
           >
             <input type="hidden" name="petId" value={id} />
-            <div className="flex gap-5 justify-center">
+
+            <div className="flex">
               <SubmitBtn label="Sim, excluir" />
               <button
                 type="button"
                 onClick={() => deleteModalRef.current?.close()}
-                className="bg-gray-200 text-gray-700 font-semibold py-1 px-2 rounded-sm"
+                className="bg-gray-200 text-gray-700 font-semibold py-1 px-4 rounded-sm hover:bg-gray-300 transition"
               >
                 Cancelar
               </button>

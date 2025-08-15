@@ -10,7 +10,7 @@ function SubmitButton() {
   const { pending } = useFormStatus();
   return (
     <button
-      className="py-1 px-2 bg-cyan-600 rounded-sm text-white font-semibold w-[10vw] m-auto disabled:opacity-60"
+      className="py-1 px-2 bg-cyan-600 rounded-sm text-white font-semibold w-[20vw] lg:w-[8vw] m-auto disabled:opacity-60"
       type="submit"
       disabled={pending}
     >
@@ -38,9 +38,8 @@ const Adicionarpet = () => {
       </button>
 
       <Modal ref={addModalRef} titulo="Adicionar Pet">
-        <div className="w-[75vw] md:w-[50vw]">
+        <div className="w-[75vw] md:w-[50vw] lg:w-[30vw] ">
           <form
-            // sem method / sem encType quando usar Server Action
             action={async (fd) => {
               try {
                 await registerPet(fd);
@@ -64,6 +63,7 @@ const Adicionarpet = () => {
                   className="w-32 h-32 object-cover rounded-md border-2 border-cyan-700"
                   width={300}
                   height={300}
+                  unoptimized
                 />
               </div>
             )}
