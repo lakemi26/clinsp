@@ -41,8 +41,10 @@ export default function SignInForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} className="flex flex-col gap-3 mt-5 max-w-sm">
-      <label className="text-cyan-700">Email</label>
+    <form
+      onSubmit={onSubmit}
+      className="flex flex-col gap-4 mt-5 w-max-[450px]"
+    >
       <input
         type="email"
         placeholder="email@exemplo.com"
@@ -53,7 +55,6 @@ export default function SignInForm() {
         autoComplete="email"
       />
 
-      <label className="text-cyan-700">Senha</label>
       <input
         type="password"
         placeholder="Sua senha"
