@@ -48,9 +48,9 @@ export default function Editar({ id, imageUrl, nome, descricao }: EditarProps) {
         />
       </div>
       <h2 className="text-cyan-700 font-bold text-2xl">{nome}</h2>
-      <p className="text-center text-cyan-900 h-[30%] line-clamp-3">
-        {descricao}
-      </p>
+      <div className="text-center text-cyan-900 h-[30%] w-full break-words overflow-x-scroll">
+        <p>{descricao}</p>
+      </div>
 
       <Modal ref={editModalRef} titulo="Editar pet">
         <div className="w-[75vw] md:w-[50vw] lg:w-[30vw]">

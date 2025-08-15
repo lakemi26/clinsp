@@ -3,6 +3,11 @@ import { adminAuth } from "@/app/firebase/admin";
 
 const COOKIE = "__session";
 
+function getErrorMessage(error: unknown): string {
+  if (error instanceof Error) return error.message;
+  return String(error);
+}
+
 export async function POST(req: Request) {
   try {
     const { idToken } = await req.json();
@@ -22,10 +27,8 @@ export async function POST(req: Request) {
       path: "/",
     });
     return res;
-  } catch (e: any) {
-    return NextResponse.json(
-      { error: e?.message ?? "sessionLogin failed" },
-      { status: 401 }
-    );
+  } catch (e: unknown) {
+    const error = getErrorMessage(e);
+    return NextResponse.json({ error }, { status: 401 });
   }
 }

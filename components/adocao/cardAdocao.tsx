@@ -24,7 +24,9 @@ const CardAdocao = ({ image, nome, texto }: AdocaoProps) => {
         />
       </div>
       <h2 className="text-cyan-700 font-bold text-2xl">{nome}</h2>
-      <p className="text-center text-cyan-900 h-[30%]">{texto}</p>
+      <div className="text-center text-cyan-900 h-[30%] w-full break-words overflow-x-scroll">
+        <p>{texto}</p>
+      </div>
     </div>
   );
 };

@@ -2,6 +2,11 @@ import { NextResponse } from "next/server";
 import { adminDb } from "@/app/firebase/admin";
 import { getServerUser } from "@/app/firebase/auth/getServerUser";
 
+function getErrorMessage(error: unknown): string {
+  if (error instanceof Error) return error.message;
+  return String(error);
+}
+
 export async function POST(req: Request) {
   const user = await getServerUser();
   if (!user)
@@ -21,10 +26,8 @@ export async function POST(req: Request) {
     });
 
     return NextResponse.json({ id: doc.id }, { status: 201 });
-  } catch (e: any) {
-    return NextResponse.json(
-      { error: e?.message ?? "failed" },
-      { status: 400 }
-    );
+  } catch (e: unknown) {
+    const error = getErrorMessage(e);
+    return NextResponse.json({ error }, { status: 400 });
   }
 }

@@ -1,3 +1,4 @@
+// app/page.tsx
 import Adocao from "@/components/adocao/adocao";
 import Ambientes from "@/components/ambientes/ambientes";
 import Banner from "@/components/Banner/banner";
@@ -16,6 +17,8 @@ type Pet = {
   imageUrl?: string;
 };
 
+type FirestorePet = Omit<Pet, "id">;
+
 export default async function Home() {
   const snap = await adminDb
     .collection("pets")
@@ -25,7 +28,7 @@ export default async function Home() {
 
   const pets: Pet[] = snap.docs.map((d) => ({
     id: d.id,
-    ...(d.data() as any),
+    ...(d.data() as FirestorePet),
   }));
 
   return (
