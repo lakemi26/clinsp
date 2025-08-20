@@ -17,7 +17,7 @@ const Especialidades = () => {
           image="/odontologia_vet.png"
           title="Odontologia Veterinária"
           text="Cuidar da saúde bucal do seu pet é essencial!
-	Oferecemos serviços de profilaxia dentária (remoção de placas, tártaro e polimento) para prevenir doenças.
+	Oferecemos serviços de profilaxia dentária (remoção de placas, cálculo e polimento) para prevenir doenças.
 	Também realizamos tratamentos periodontais para casos mais avançados, que podem afetar não só a boca, mas também o coração, figado, rins e outros orgãos.
 "
           especial="A saúde do seu pet começa com um bom cuidado bucal."
